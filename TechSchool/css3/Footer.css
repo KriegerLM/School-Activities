@@ -1,0 +1,100 @@
+/*footer++++++++++++++++++++++++++++++++++++++++++++++++*/
+body{
+    font-family: tahoma;
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0;
+}
+footer{
+    background: #D5E667;
+    width: 91%;
+    height: 260px;
+    color: #363434;
+    padding: 20px;
+    padding-left: 100px;
+}
+.conntenedorFooterall{
+    width: 100%;
+    height: 1200px;
+    margin: auto;
+}
+.contenedoBody{
+    display: flex;
+}
+.columna1{
+    float: left;
+    max-width: 400px;
+}
+.columna1 h1{
+    font-size: 22px;
+}
+.coumna1 p{
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+.columna2{
+    max-width: 400px;
+    float: left;
+    padding-left: 100px;
+}
+.columna2 h1{
+    font-size: 22px;
+}
+.fila{
+    margin-top: 20px;
+    display: flex;
+}
+.fila img{
+    width: 36px;
+    height: 36px;
+}
+.fila label{
+    margin-top: 3px;
+    margin-left: 10px;
+}
+.fila label a{
+    color: #363434;
+    text-decoration: none;
+}
+.columna3{
+    max-width: 400px;
+    float: left;
+    padding-left: 50px;
+}
+.columna3 h1{
+    font-size: 22px;
+}
+.fila2{
+    margin-top: 20px;
+    display: flex;
+}
+.fila2 img{
+    width: 36px;
+    height: 36px;
+}
+.fila2 label{
+    margin-top: 3px;
+    margin-left: 20px;
+    max-width: 150px;
+}
+.fila2 label a{
+    color: #363434;
+    text-decoration: none;
+}
+.contenedorFooter{
+    width: 100%;
+    background: #101010;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+.copyrigth{
+    color: #363434;
+}
+.copyrigth a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
