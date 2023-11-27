@@ -1,0 +1,108 @@
+body{
+    font-family: tahoma;
+}
+/*contenedor general*/
+.congen{
+    background-color: cadetblue;
+}
+/*Menu superior*/
+.menSup{
+    font-family: didot;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.6em;
+    margin: 0;
+}
+/*Contenedor para el contenido superior en el cuerpo*/
+.conSup{
+    background: #D0D2C1;
+    color: black;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/*Contenedor de usuario*/
+.usuario{
+    background: gray;
+    width: 50%;
+    height: auto;
+}
+.usuario h1{
+    width: 61%;
+    height: auto;
+    padding: 5px;
+    margin: auto;
+}
+.fotoUsu{
+    width: 40%;
+    height: auto;
+    margin: 5px;
+}
+.usuario p{
+    background: white;
+    width: 55%;
+    height: auto;
+    font-size: 2rem;
+    line-height: 1.5em;
+    margin: 5px;
+    float: right;
+}
+/*contenedor a la derecha del de usuario*/
+.conD{
+    background: gray;
+    color: black;
+    width: 40%;
+    height: auto;
+    position: relative;
+}
+
+/*Contenedor inferior para cursos*/
+.conIn{
+    background: #E05F5F;
+    color: black;
+    width: 100%;
+    height: 300px;
+}
+.conIn h2{
+    background: white;
+    width: 95%;
+    height: 50px;
+    margin: auto;
+    font-size: 2rem;
+    line-height: 1.5em;
+}
+/*Contenedores de los cursos*/
+.conCur{
+    background: red;
+    width: 95%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+}
+.curso{
+    background-color: darkviolet;
+    min-width: 200px;
+    height: 200px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+ 
+
+
+
+
+
+
+
