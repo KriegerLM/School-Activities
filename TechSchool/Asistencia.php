@@ -26,19 +26,20 @@
                                 <label class="label" for="telefono">Telefono</label>
                             </div>
                             <div class="input-group">
-                                <input class="input" required type="email" id="email">
+                                <input class="input" required type="email" id="email" name="email">
                                 <label class="label" for="email">Correo electronico</label>
                             </div>
                             <div class="input-group">
-                                <input class="input" required type="text" id="motivo">
+                                <input class="input" required type="text" id="motivo" name="Reason">
                                 <label class="label" for="motivo">¿Cual es el motivo por el que desea contactarnos?</label>
                             </div>
                             <div class="input-group2">
                                 <textarea name="message" cols="30" rows="10" class="input2" required id="message"></textarea>
                                 <label class="label" for="motivo">Comentarios o especificaciones</label>
                             </div>
-                            <input type="hidden" name="_next" value="http://localhost/TechSchool/checkprueba.php">
+                            <input type="hidden" name="_next" value="http://localhost/TechSchool/Asistencia.php">
                             <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
                         </div>
                         <div class="terEnv">
                             <p>Recuerda leer nuestros <a href="#">Terminos y Condiciones</a> y <a href="#">Aviso de privacidad</a></p>

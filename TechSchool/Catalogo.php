@@ -1,39 +1,112 @@
-<html>
+INDEX
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <!-- Cargar Bootstrap desde un CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css3/catalogo.css">
+    <title>Catálogo</title>
 </head>
 <body>
-    <!-- Crear un contenedor con un fondo gris -->
-    <div class="container bg-light">
-        <!-- Crear un encabezado con un texto rojo -->
-        <h1 class="text-danger">Asistencia al usuario</h1>
-        <!-- Crear un formulario con cuatro campos y un botón -->
-        <form>
-            <div class="form-group">
-                <label for="nombre">Nombre de contacto</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre">
+    <div class="menSup">
+        <?php include('MenuSup.php'); ?>
+    </div>
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Imagenes/compu.png" alt="">
+                    </div>
+                    <p class="descripcion">CURSO: PARTES DE UNA COMPUTADORA</p>
+                    <!--<span class="precio">$300</span>-->
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Imagenes/icono-facebook.png" alt="">
+                    </div>
+                    <p class="descripcion" id>CURSO: FACEBOOK</p>
+                    <!--<span class="precio">$150</span>-->
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Imagenes/chrome-logo.png" alt="">
+                    </div>
+                    <p class="descripcion">CURSO: NAVEGADORES
+                    </p>
+                    <!--<span class="precio">$300</span>-->
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Imagenes/logo-Gmail.png" alt="">
+                    </div>
+                    <p class="descripcion">CURSO: CORREO ELECTRONICO</p>
+                    <!--<span class="precio">$200</span>-->
+                </div>
             </div>
-            <div class="form-group">
-                <label for="telefono">Teléfono</label>
-                <input type="tel" class="form-control" id="telefono" placeholder="Escribe tu teléfono">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Imagenes/whatsapp-logo.jpg" alt="">
+                    </div>
+                    <p class="descripcion">CURSO: WHATSAPP</p>
+                    <!--<span class="precio">$130</span>-->
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Imagenes/icono-instagram.png" alt="">
+                    </div>
+                    <p class="descripcion">CURSO: INSTAGRAM</p>
+                    <!--<span class="precio">$100</span>-->
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Imagenes/logo-X.jpg" alt="">
+                    </div>
+                    <p class="descripcion">CURSO: TWITTER</p>
+                    <!--<span class="precio">$ 100</span>-->
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Imagenes/office.jpg" alt="">
+                    </div>
+                    <p class="descripcion">CURSO: OFFICE 365</p>
+                    <!--<span class="precio">$500</span>-->
+                </div>
+            </div> 
+        </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
             </div>
-            <div class="form-group">
-                <label for="email">Correo electrónico</label>
-                <input type="email" class="form-control" id="email" placeholder="Escribe tu correo electrónico">
+            <div class="info">
+                <img src="img/1.png" alt="" id="img">
+                <h2 id="modelo">CURSO: OFFICE 365</h2>
+                <p id="descripcion">Descripción del curso</p>
+
+                <!--<span class="precio" id="precio">$500</span>-->
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">SIZE</label>
+                        <select name="" id="">
+                            <option value="">Completo</option>
+                            <option value="">Word</option>
+                            <option value="">Excel</option>
+                            <option value="">Power Point</option>
+                        </select>
+                    </div>
+                    <button>Empezar</button>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="comentarios">Comentarios o especificaciones</label>
-                <textarea class="form-control" id="comentarios" rows="3" placeholder="Escribe tus comentarios o especificaciones"></textarea>
-            </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="terminos">
-                <label class="form-check-label" for="terminos">Recuerda leer nuestros <a href="#">Términos y Condiciones</a> y <a href="#">Política de privacidad</a></label>
-            </div>
-            <button type="submit" class="btn btn-danger">Enviar</button>
-        </form>
-        <!-- Crear un pie de página con un texto rojo -->
-        <p class="text-danger">© 2023 Todos los derechos reservados</p>
+        </div>
+    </section>
+
+    <script src="catalogo.js"></script>
+    <div class="footer">
+        <?php include('Pie.php'); ?>
     </div>
 </body>
 </html>
