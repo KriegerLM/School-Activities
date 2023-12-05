@@ -19,6 +19,7 @@
                     <p>Usuario</p>
                 </div>
                 <div class="conD">
+                    <p><a href="CerrarSes.php">Cerrar Sesión</a></p>
                     <!--Agregar contenido (aun en discucion)-->
                 </div>
             </div>
