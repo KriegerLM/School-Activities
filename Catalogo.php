@@ -8,6 +8,10 @@
         <title>Catálogo</title>
     </head>
     <body>
+        <!--Cabecera+++++++++++++++++++++++++++++++++++++++-->
+        <div class="menSup">
+            <?php include('MenuSup.php'); ?>
+        </div>
         <section class="contenido">
             <div class="mostrador" id="mostrador">
                 <div class="fila">
@@ -63,23 +67,27 @@
                     </div>
                 </div> 
             </div>
-
-        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
-        <div class="seleccion" id="seleccion">
-            <div class="cerrar" onclick="cerrar()">
-                &#x2715
-            </div>
-            <div class="info">
-                <img src="" alt="" id="img">
-                <h2 id="modelo">Curso</h2>
-                <p id="descripcion">Descripción del curso</p>
-                <div class="fila">
-                    <input class="button" type="submit" value="Iniciar">
+           
+            <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+            <div class="seleccion" id="seleccion">
+                <div class="cerrar" onclick="cerrar()">
+                    &#x2715
+                </div>
+                <div class="info">
+                    <img src="" alt="" id="img">
+                    <h2 id="modelo">Curso</h2>
+                    <p id="descripcion">Descripción del curso</p>
+                    <div class="fila">
+                        <input class="button" type="submit" value="Iniciar">
+                    </div>
                 </div>
             </div>
+        </section>
+        <script src="catalogo.js"></script>
+        <!--Footer+++++++++++++++++++++++++++++++++++++++++++++++-->
+        <div class="footer">
+            <?php include('Pie.php'); ?>
         </div>
-    </section>
-    <script src="catalogo.js"></script>
     </body>
 </html>
 

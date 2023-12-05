@@ -17,12 +17,13 @@ STYLE.CSS
 .contenido{
     max-width: 1200px;
     width: 100%;
-    height: auto;
+    height: 700px;
     margin: 40px auto;
     display: flex;
 }
 .mostrador{
     width: 100%;
+    height: auto;
     transition: .5s ease;
 }
 .mostrador .fila{
@@ -47,22 +48,21 @@ STYLE.CSS
     background-color: #e6e6e6;
 }
 .mostrador .fila .item img{
-    width: 100%;
-    margin: 30px 0;
+    width: 60%;
+    height: auto;
+    margin: 15px 0;
 }
 .mostrador .fila .item .descripcion{
     color: #707070;
     font-weight: bold;
-}
-.mostrador .fila .item .precio{
-    color: #f85151;
-    font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
+    font-family: Times New Roman;
 }
 .seleccion{
     transition: .5s ease;
     opacity: 0;
     width: 0%;
+    height: 100%;
     border: 1px solid #ccc;
     position: relative;
     display: flex;
@@ -95,13 +95,6 @@ STYLE.CSS
     color: #707070;
     margin-bottom: 10px;
 }
-.info .precio{
-    font-size: 30px;
-    font-weight: bold;
-    color: #f85151;
-    margin-bottom: 10px;
-    display: block;
-} 
 .info .fila{
     display: flex;
     align-items: flex-end;
