@@ -40,7 +40,7 @@ body{
     width: 40%;
     height: auto;
     margin: 5px;
-}
+} 
 .usuario p{
     background: white;
     width: 55%;
@@ -88,13 +88,19 @@ body{
 .curso{
     background-color: darkviolet;
     min-width: 200px;
-    height: 200px;
+    height: 200px; 
     margin: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+footer{
+    font-family: tahoma;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0;
+}
 
 
 

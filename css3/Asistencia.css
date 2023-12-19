@@ -152,6 +152,13 @@ form{
     margin: 16px 0;
     font-size: 16px;
     cursor: pointer;
+} 
+
+footer{
+    font-family: tahoma;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0;
 }
 
 

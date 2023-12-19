@@ -117,3 +117,10 @@ STYLE.CSS
     background-color: #f85151;
     cursor: pointer;
 }
+ 
+footer{
+    font-family: tahoma;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0;
+}

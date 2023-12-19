@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <link href="css3/MenuSup.css" rel="stylesheet"/>
     </head>
-    <body>
+    <body class="general">
         <header class="header">
             <div class="contenedor logo-nav-contenedor">
                 <label><a href="#" class="logo">TechSchool</a></label>
