@@ -1,0 +1,401 @@
+/*cabecera++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+body{
+    font-family: tahoma;
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0;
+}
+.contenedor{
+    width: 85%;
+    margin: 0 auto;
+}
+.header {
+    background: #333;
+    color: white;
+    padding: 2rem 0;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+}
+.logo-nav-contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.navegacion ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navegacion ul li{
+    display: inline-block;
+}
+.navegacion ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 15px;
+}
+.navegacion ul li a:hover{
+    background: #4a4a4a;
+}
+
+/*Submenus*/
+.navegacion ul li ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: #333;
+}
+.navegacion ul li ul li{
+    width: 180px;
+    position: relative;
+}
+.navegacion ul li ul li ul{
+    position: absolute;
+    top: 0;
+    left: 180px;
+}
+.navegacion ul li ul{
+    display: none;
+}
+.navegacion ul li:hover > ul{
+    display: block;
+    display: flex;
+}
+
+/*logo*/
+
+.logo{
+    width: 125px;
+    height: auto;
+}
+
+/*carrito*/
+.carrito{
+    width: 50px;
+    height: auto;
+}
+
+
+/*Barra de busqueda*/
+.buscarbar{
+    float: left;
+}
+.field {
+  display:flex;
+  position:realtive;
+  width:70%;
+  flex-direction:row;
+}
+
+.field>input[type=text],
+.field>button {
+  display:block;
+    cursor: pointer;
+}
+
+.field>input[type=text] {
+  flex:1;
+  padding:0.6em;
+  border:0.2em solid rgb(6,0,0);
+}
+
+.field>button {
+  padding:0.6em 0.8em;
+  background-color:rgb(0,0,0);
+  color:white;
+  border:none;
+}
+
+
+
+
+
+
+
+
+
+/*aside+++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.aside{
+    display: inline-block;
+    width: 300px;
+    min-height: 330px;
+    background: #333;
+    float: left;
+}
+.asid{
+    display: inline-block;
+    width: 300px;
+    height: 900px;
+    background: white;
+    float: left;
+}
+.asids{
+    display: inline-block;
+    width: 300px;
+    height: 1274px;
+    background: white;
+    float: left;
+}
+.asidsd{
+    display: inline-block;
+    width: 300px;
+    height: 1475px;
+    background: white;
+    float: left;
+}
+.asida{
+    display: inline-block;
+    width: 300px;
+    height: 1675px;
+    background: white;
+    float: left;
+}
+.asidCa{
+    display: inline-block;
+    width: 300px;
+    height: 2000px;
+    background: white;
+    float: left;
+}
+.asidCom{
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    background: white;
+    float: left;
+}
+.postik{
+    position: sticky;
+    top: 0;
+}
+.asi ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+}
+.asi ul li a:hover{
+    background: #4a4a4a;
+}
+.contenedorside{
+    height: 98%;
+    margin: 0 auto;
+}
+.asi h2{
+    margin: 2px;
+    text-align: center;
+}
+.asi ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*cuerpo++++++++++++++++++++++++++++++++++++++++++++++++*/
+.anormal{
+    width: 275px;
+    height: auto;
+}
+.normal{
+    width: 250px;
+    height: auto;
+}
+.norm260{
+    width: 260px;
+    height: auto;
+}
+.norm{
+    width: 230px;
+    height: auto;
+}
+.ima{
+    width: 125px;
+    height: auto;
+}
+.imas{
+    width: 90px;
+    height: auto;
+}
+.imaM{
+    width: 75px;
+    height: auto;
+}
+.imacam{
+    width: 143px;
+    height: auto;
+}
+.imasug{
+    width: 150px;
+    height: auto;
+}
+.imacamC{
+    width: 210px;
+    height: auto;
+}
+.ima175{
+    width: 175px;
+}
+.ima200{
+    width: 200px;
+    height: auto;
+}
+.conpro{
+    text-align: center;
+    float: left;
+    margin: 9px;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 2px 1px 2px 1px rgba(0,0,0,0.12);
+}
+.tit{
+    margin: 30px;
+    color: black;
+}
+.nopres{
+    color: black;
+    float: right;
+    margin: 50px;
+}
+.nopresC{
+    color: white;
+    float: right;
+    margin: 50px;
+}
+.nopre{
+    color: black;
+}
+
+
+
+
+
+
+
+
+/*footer++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+footer{
+    background: #333;
+    width: 91%;
+    height: 260px;
+    color: white;
+    padding: 20px;
+    padding-left: 100px;
+}
+.conntenedorFooterall{
+    width: 100%;
+    height: 1200px;
+    margin: auto;
+}
+.contenedoBody{
+    display: flex;
+}
+.columna1{
+    float: left;
+    max-width: 400px;
+}
+.columna1 h1{
+    font-size: 22px;
+}
+.coumna1 p{
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+.columna2{
+    max-width: 400px;
+    float: left;
+    padding-left: 100px;
+}
+.columna2 h1{
+    font-size: 22px;
+}
+.fila{
+    margin-top: 20px;
+    display: flex;
+}
+.fila img{
+    width: 36px;
+    height: 36px;
+}
+.fila label{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.fila label a{
+    color: #C7C7C7;
+    text-decoration: none;
+}
+.columna3{
+    max-width: 400px;
+    float: left;
+    padding-left: 50px;
+}
+.columna3 h1{
+    font-size: 22px;
+}
+.fila2{
+    margin-top: 20px;
+    display: flex;
+}
+.fila2 img{
+    width: 36px;
+    height: 36px;
+}
+.fila2 label{
+    margin-left: 20px;
+    max-width: 150px;
+}
+.fila2 label a{
+    color: #C7C7C7;
+    text-decoration: none;
+}
+.contenedorFooter{
+    width: 100%;
+    background: #101010;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+.copyrigth{
+    color: #C7C7C7;
+}
+.copyrigth a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

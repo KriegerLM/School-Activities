@@ -1,0 +1,26 @@
+body{
+    font-family: tahoma;
+}
+.ConGen{
+    background: gray;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.cuerpo{
+    color: black;
+    background: #D8D8D8;
+    width: 80%;
+    height: auto;
+    margin: 5px;
+    padding: 10px;
+}
+
+
+footer{
+    font-family: tahoma;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0;
+}

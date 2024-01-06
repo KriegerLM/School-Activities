@@ -1,0 +1,84 @@
+body{
+    font-family: tahoma;
+}
+/*contenedor general*/
+.ConGen{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 950px;
+}
+/*Contenedor de curso*/
+.curso{
+    color: black;
+    width: 300px;
+    height: 410px;
+    margin: 20px 30px 20px 0px;
+    padding: 10px 0px 10px 0px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    line-height: 1em;
+    border-radius: 50px;
+    background: #FFF;
+    box-shadow:  5px 5px 10px #6e6e6e,
+             -5px -5px 10px #ffffff;
+}
+h5{
+    display: inline-block;
+    max-width: 250px;
+    max-height: 150px; 
+    margin-block-start: 0.5em;
+    margin-block-end: 1em;
+    margin-inline-start: 5px;
+    margin-inline-end: 5px;
+    text-align: justify;
+}
+.imag{
+    margin: 5px;
+    width: 50%;
+    height: auto;
+}
+.imagCom{ 
+    margin: 5px;
+    width: 204px;
+    height: auto;
+}
+.botons{
+    background: #a5be24;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+}
+.botons a{
+    color: black;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+
+footer{
+    font-family: tahoma;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+
+ 
+
+
+
+
+
+
+

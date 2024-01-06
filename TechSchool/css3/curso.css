@@ -1,0 +1,25 @@
+body{
+    background-color: white;
+    color: black;
+    font-family: tahoma;
+    font-size: 500%;
+}
+.conGen{
+    background-color: white;
+}
+.conten{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.contenido{
+    background-color: #EAEAEA;
+    width: 80%;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
