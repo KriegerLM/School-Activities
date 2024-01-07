@@ -5,12 +5,11 @@
     $db = new Database();
     $con = $db->conectar();
 
-    $sql = $con->prepare("SELECT id_Cur, Nombre_Cur, Descripcion_cur FROM curso");
+    $sql = $con->prepare("SELECT id_usuario, id_curso FROM relacion");
     $sql->execute();
     $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
-
 
 <!DOCTYPE html>
 <html>
@@ -43,17 +42,18 @@
                 <div class="conCur">
                     <?php foreach($resultado as $row) { ?>
                     <div class="curso">
+                       <!--Impresion de imagen+++++++++++++++++++++-->
                         <?php
-                            $id = $row['id_Cur'];
+                            $id = $row['id_curso'];
                             $imagen = "Imagenes/curso/" . $id . "/FotoPrin.png";
     
                             if(!file_exists($imagen)){
                                 $imagen = "Imagenes/No-Foto.png";
                             }
                         ?>
-                            
+                        <!--Condicion para que el boton te mande al curso correspondiente-->
                         <?php
-                            $id = $row['id_Cur'];
+                            $id = $row['id_curso'];
                             $ContenidoCur = "ContenidoCur/" . $id . "/cuntCur.php";
     
                             if(!file_exists($ContenidoCur)){
@@ -61,12 +61,11 @@
                             }
                         ?>
                         <img class="imag" src="<?php echo $imagen; ?>">
-                        <h4><?php echo $row['Nombre_Cur']; ?></h4>
                         <div class="botons">
-                            <a href="<?php echo $ContenidoCur; ?>?id_Cur=<?php echo $row['id_Cur']; ?>&token=<?php echo hash_hmac('sha1', $row['id_Cur'],KEY_TOKEN); ?>">Continuar</a>
+                            <a href="<?php echo $ContenidoCur; ?>?id_Cur=<?php echo $row['id_curso']; ?>&token=<?php echo hash_hmac('sha1', $row['id_curso'],KEY_TOKEN); ?>">Continuar</a>
                         </div>
                     </div>
-                    <?php } ?>
+                    <?php }?>
                </div>
             </div>
             <!--Footer+++++++++++++++++++++++++++++++++++++++++++++++-->
