@@ -64,7 +64,7 @@ body{
     background: #E05F5F;
     color: black;
     width: 100%;
-    height: 300px;
+    height: 350px;
 }
 .conIn h2{
     background: white;
@@ -78,7 +78,7 @@ body{
 .conCur{
     background: red;
     width: 95%;
-    height: auto;
+    height: 280px;
     margin: auto;
     padding: 10px;
     display: flex;
@@ -88,11 +88,37 @@ body{
 .curso{
     background-color: darkviolet;
     min-width: 200px;
-    height: 200px; 
+    height: 2250x;
     margin: 5px;
+    font-size: 1rem;
+    justify-content: space-evenly;
+    text-align: center;
+    line-height: 1em;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+}
+.imag{
+    width: 100px;
+    max-width: 200px;
+    margin: 5px;
+}
+.botons{
+    background: #a5be24;
+    font-family: inherit;
+    padding: 0.6em 0px 0.6em 0px;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+}
+.botons a{
+    background: none;
+    padding: 0.6rem 1.3rem;
+    color: black;
+    text-decoration: none;
 }
 
 footer{

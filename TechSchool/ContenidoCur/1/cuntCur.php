@@ -126,8 +126,13 @@
                    <dt>2.	Respaldos de Datos:</dt>
                    <dd>•	Hacer respaldos periódicos de datos importantes en unidades externas ayuda a evitar pérdidas de información en caso de problemas.</dd>
                </dl>
-               <div class="botons">
-                  <a href="../../Catalogo.php">Regresar al Catalogo</a>
+               <div class="conBotons">
+                   <div class="botons">
+                      <a href="../../Catalogo.php">Regresar al Catalogo</a>
+                   </div>
+                   <div class="botons">
+                      <a href="../../index.php">Regresar al Inicio</a>
+                   </div>
                </div>
            </div>
         </div>

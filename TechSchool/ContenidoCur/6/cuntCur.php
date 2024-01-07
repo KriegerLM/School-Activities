@@ -134,8 +134,13 @@
                    <dt>2.	Mantener la Seguridad:</dt>
                    <dd>•	Usa contraseñas fuertes y habilita la autenticación de dos factores.</dd>
                </dl>
-               <div class="botons">
-                  <a href="../../Catalogo.php">Regresar al Catalogo</a>
+               <div class="conBotons">
+                   <div class="botons">
+                      <a href="../../Catalogo.php">Regresar al Catalogo</a>
+                   </div>
+                   <div class="botons">
+                      <a href="../../index.php">Regresar al Inicio</a>
+                   </div>
                </div>
            </div>
         </div>

@@ -46,13 +46,17 @@ dd{
     line-height: 1em;
     margin: 10px 0px 5px 50px;
 }
-
+.conBotons{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
 .botons{
-    width: 165px;
+    width: auto;
     margin: 50px 10px 10px 10px;
     background: #e9f2a4;
     font-family: inherit;
-    padding: 0.6em 1.3em;
+    padding: 0.6em 0px 0.6em 0px;
     font-weight: 900;
     font-size: 18px;
     border: 3px solid black;
@@ -61,8 +65,9 @@ dd{
     cursor: pointer;
 }
 .botons a{
+    background: none;
     color: black;
-    border-radius: 15px;
+    padding: 1.2em 1.3em;
     text-decoration: none;
 }
 

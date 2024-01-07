@@ -52,7 +52,7 @@ h5{
 .botons{
     background: #a5be24;
     font-family: inherit;
-    padding: 0.6em 1.3em;
+    padding: 0.6em 0px 0.6em 0px;
     font-weight: 900;
     font-size: 18px;
     border: 3px solid black;
@@ -61,8 +61,9 @@ h5{
     cursor: pointer;
 }
 .botons a{
+    background: none;
     color: black;
-    border-radius: 15px;
+    padding: 0.6rem 1.3rem;
     text-decoration: none;
 }
 
