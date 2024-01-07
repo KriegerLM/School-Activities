@@ -1,4 +1,4 @@
-body{
+body{ 
     font-family: tahoma;
 }
 /*contenedor general*/
@@ -15,7 +15,7 @@ body{
 }
 /*Contenedor para el contenido superior en el cuerpo*/
 .conSup{
-    background: #D0D2C1;
+    background: #F4F4F4;
     color: black;
     margin: 0;
     width: 100%;
@@ -25,49 +25,95 @@ body{
     flex-wrap: wrap;
 }
 /*Contenedor de usuario*/
-.usuario{
-    background: gray;
-    width: 50%;
-    height: auto;
+.card {
+  position: relative;
+  width: 50%;
+  height: auto;
+  border-radius: 14px;
+  z-index: 1111;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.usuario h1{
-    width: 61%;
-    height: auto;
-    padding: 5px;
-    margin: auto;
+
+.bg {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 665px;
+  height: 346px;
+  z-index: 2;
+  background: rgba(255, 255, 255, .95);
+  backdrop-filter: blur(24px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid white;
 }
-.fotoUsu{
-    width: 40%;
-    height: auto;
-    margin: 5px;
-} 
-.usuario p{
-    background: white;
-    width: 55%;
-    height: auto;
-    font-size: 2rem;
+.bg p{
+    text-align: justify;
     line-height: 1.5em;
-    margin: 5px;
-    float: right;
+    font-size: 1em;
+    margin: 10px;
 }
-/*contenedor a la derecha del de usuario*/
+
+.blob {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #E700CB;
+  opacity: 1;
+  filter: blur(12px);
+  animation: blob-bounce 5s infinite ease;
+}
+
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-250%, -150%) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: translate(40%, -150%) translate3d(100%, 0, 0);
+  }
+
+  50% {
+    transform: translate(40%, -50%) translate3d(100%, 100%, 0);
+  }
+
+  75% {
+    transform: translate(-250%, -50%) translate3d(0, 100%, 0);
+  }
+
+  100% {
+    transform: translate(-250%, -150%) translate3d(0, 0, 0);
+  }
+}
+
+/*contenedor del video*/
 .conD{
-    background: gray;
+    background: #F4F4F4;
     color: black;
-    width: 40%;
+    width: 42%;
     height: auto;
     position: relative;
+    margin: 5px;
+    padding: 10px;
 }
 
 /*Contenedor inferior para cursos*/
 .conIn{
-    background: #E05F5F;
+    background: #F4F4F4;
     color: black;
     width: 100%;
-    height: 300px;
+    height: 625px;
 }
 .conIn h2{
-    background: white;
+    background: #F4F4F4;
     width: 95%;
     height: 50px;
     margin: auto;
@@ -76,23 +122,70 @@ body{
 }
 /*Contenedores de los cursos*/
 .conCur{
-    background: red;
+    background: #F4F4F4;
     width: 95%;
-    height: auto;
+    height: 100%;
     margin: auto;
-    padding: 10px;
+    padding: 0px;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     overflow-x: auto;
 }
 .curso{
-    background-color: darkviolet;
-    min-width: 200px;
-    height: 200px; 
-    margin: 5px;
-    display: flex;
+    color: black;
+    width: 300px;
+    height: 475px;
+    margin: 20px 45px 20px 45px;
+    padding: 10px 0px 10px 0px;
+    display: flex; 
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    text-align: center;
+    line-height: 1em;
+    border-radius: 50px;
+    background: #FFF;
+    box-shadow:  5px 5px 10px #6e6e6e,
+             -5px -5px 10px #ffffff;
+}
+h5{
+    display: inline-block;
+    max-width: 250px;
+    max-height: 150px; 
+    margin-block-start: 0.5em;
+    margin-block-end: 1em;
+    margin-inline-start: 5px;
+    margin-inline-end: 5px;
+    text-align: justify;
+}
+.imag{
+    margin: 5px;
+    width: 50%;
+    height: auto;
+}
+.botons{
+    background: #a5be24;
+    font-family: inherit;
+    padding: 0.6em 0px 0.6em 0px;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+}
+.botons a{
+    background: none;
+    padding: 0.6rem 1.3rem;
+    color: black;
+    text-decoration: none;
+}
+.linea {
+    background: black;
+    width: 100%;
+    max-width: 100%;
+    padding: 1px;
+    margin: 5px auto 5px auto;
 }
 
 footer{

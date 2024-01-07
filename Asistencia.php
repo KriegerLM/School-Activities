@@ -31,7 +31,7 @@
                             </div>
                             <div class="input-group">
                                 <input class="input" required type="text" id="motivo" name="Reason">
-                                <label class="label" for="motivo">¿Cual es el motivo por el que desea contactarnos?</label>
+                                <label class="label" for="motivo">¿Por qué desea contactarnos?</label>
                             </div>
                             <div class="input-group2">
                                 <textarea name="message" cols="30" rows="10" class="input2" required id="message"></textarea>

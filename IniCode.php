@@ -3,7 +3,8 @@
     session_start();
 
     include('Coneccion.php');
-
+    
+    $idUser = $_POST['id_usuario'];
     $correo = $_POST['correo'];
     $password = $_POST['password'];
 
