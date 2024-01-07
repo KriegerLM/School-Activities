@@ -3,6 +3,7 @@ body{
 }
 /*contenedor general*/
 .ConGen{
+    background: #F4F4F4;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

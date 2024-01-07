@@ -2,7 +2,7 @@ body{
     font-family: tahoma;
 }
 .ConGen{
-    background: gray;
+    background: #F4F4F4;
     width: 100%;
     height: auto;
     display: flex;
@@ -10,13 +10,61 @@ body{
 }
 .cuerpo{
     color: black;
-    background: #D8D8D8;
-    width: 80%;
+    background: #C6D94D;
+    width: 70%;
     height: auto;
-    margin: 5px;
-    padding: 10px;
+    margin: 30px 5px;
+    padding: 20px 30px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+}
+.Titulo{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+} 
+.linea {
+    background: black;
+    width: 100%;
+    max-width: 100%;
+    padding: 1px;
+    margin: 20px auto 10px auto;
+}
+h3{
+    margin: 50px 0px 5px 0px;
+}
+dl{
+    margin: 5px 20px;
+}
+dt{
+    margin: 0px 0px 5px 0px;
+}
+dd{
+    line-height: 1em;
+    margin: 10px 0px 5px 50px;
 }
 
+.botons{
+    width: 165px;
+    margin: 50px 10px 10px 10px;
+    background: #e9f2a4;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+}
+.botons a{
+    color: black;
+    border-radius: 15px;
+    text-decoration: none;
+}
 
 footer{
     font-family: tahoma;
